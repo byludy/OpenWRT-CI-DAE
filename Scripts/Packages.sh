@@ -86,6 +86,8 @@ echo "CONFIG_PACKAGE_luci-app-diskman=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 echo "CONFIG_PACKAGE_luci-app-filemanager=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 echo "CONFIG_PACKAGE_luci-app-ramfree=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 
+#UPDATE_PACKAGE "luci-app-partexp" "sirpdboy/luci-app-partexp" "main"
+#echo "CONFIG_PACKAGE_luci-app-partexp=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 
 #UPDATE_PACKAGE "luci-app-netwizard" "sirpdboy/luci-app-netwizard" "main"
 #echo "CONFIG_PACKAGE_luci-app-netwizard=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
@@ -93,17 +95,18 @@ echo "CONFIG_PACKAGE_luci-app-ramfree=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 UPDATE_PACKAGE "luci-app-watchdog" "sirpdboy/luci-app-watchdog" "main"
 echo "CONFIG_PACKAGE_luci-app-watchdog=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 
-#UPDATE_PACKAGE "luci-app-store" "linkease/istore" "main"
-#echo "CONFIG_PACKAGE_luci-app-store=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
-#mv luci-app-store/luci/* luci-app-store/
-
 UPDATE_PACKAGE "luci-app-rtp2httpd" "stackia/rtp2httpd" "main"
 echo "CONFIG_PACKAGE_luci-app-rtp2httpd=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 #mv luci-app-rtp2httpd/openwrt-support/* luci-app-rtp2httpd/
 
-UPDATE_PACKAGE "luci-app-thunder" "byludy/luci-app-thunder" "main"
-echo "CONFIG_PACKAGE_luci-app-thunder=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
+# 迅雷有问题
+#UPDATE_PACKAGE "luci-app-thunder" "byludy/luci-app-thunder" "main"
+#echo "CONFIG_PACKAGE_luci-app-thunder=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 
+# 只有ipk可以用
+#UPDATE_PACKAGE "luci-app-store" "linkease/istore" "main"
+#echo "CONFIG_PACKAGE_luci-app-store=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
+#mv luci-app-store/luci/* luci-app-store/
 
 #更新软件包版本
 UPDATE_VERSION() {
