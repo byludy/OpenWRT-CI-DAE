@@ -83,14 +83,14 @@ UPDATE_PACKAGE "luci-app-lucky" "sirpdboy/luci-app-lucky" "main"
 # 我新加的
 echo "CONFIG_PACKAGE_luci-app-diskman=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 
-UPDATE_PACKAGE "luci-app-netwizard" "sirpdboy/luci-app-netwizard" "main"
-echo "CONFIG_PACKAGE_luci-app-netwizard=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
+#UPDATE_PACKAGE "luci-app-netwizard" "sirpdboy/luci-app-netwizard" "main"
+#echo "CONFIG_PACKAGE_luci-app-netwizard=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 
 UPDATE_PACKAGE "luci-app-watchdog" "sirpdboy/luci-app-watchdog" "main"
 echo "CONFIG_PACKAGE_luci-app-watchdog=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 
-UPDATE_PACKAGE "luci-app-store" "linkease/istore" "main" "name"
-echo "CONFIG_PACKAGE_luci-app-store=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
+#UPDATE_PACKAGE "luci-app-store" "linkease/istore" "main" "name"
+#echo "CONFIG_PACKAGE_luci-app-store=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 #mv luci-app-store/luci/* luci-app-store/
 
 UPDATE_PACKAGE "luci-app-rtp2httpd" "stackia/rtp2httpd" "main" "name"
