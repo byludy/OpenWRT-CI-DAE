@@ -85,8 +85,8 @@ UPDATE_PACKAGE "luci-app-lucky" "sirpdboy/luci-app-lucky" "main"
 UPDATE_PACKAGE "luci-app-netwizard" "sirpdboy/luci-app-netwizard" "main"
 UPDATE_PACKAGE "luci-app-watchdog" "sirpdboy/luci-app-watchdog" "main"
 
-UPDATE_PACKAGE "istore" "linkease/istore" "main"
-mv istore/luci/* .
+UPDATE_PACKAGE "luci-app-store" "linkease/istore" "main" "name"
+mv luci-app-store/luci/* .
 
 # UPDATE_PACKAGE "luci-app-thunder" "byludy/luci-app-thunder" "main"
 
