@@ -81,14 +81,6 @@ UPDATE_PACKAGE "luci-app-lucky" "sirpdboy/luci-app-lucky" "main"
 
 
 # 我新加的
-echo "CONFIG_PACKAGE_luci-app-argon-config=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
-echo "CONFIG_PACKAGE_luci-app-diskman=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
-echo "CONFIG_PACKAGE_luci-app-filemanager=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
-echo "CONFIG_PACKAGE_luci-app-ramfree=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
-
-#UPDATE_PACKAGE "luci-app-partexp" "sirpdboy/luci-app-partexp" "main"
-#echo "CONFIG_PACKAGE_luci-app-partexp=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
-
 #UPDATE_PACKAGE "luci-app-netwizard" "sirpdboy/luci-app-netwizard" "main"
 #echo "CONFIG_PACKAGE_luci-app-netwizard=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 
