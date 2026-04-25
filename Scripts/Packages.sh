@@ -79,6 +79,8 @@ UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "luci-app-timewol luci-ap
 #UPDATE_PACKAGE "luci-app-pushbot" "zzsj0928/luci-app-pushbot" "master"
 UPDATE_PACKAGE "luci-app-lucky" "sirpdboy/luci-app-lucky" "main"
 
+# 只有ipk可以用
+UPDATE_PACKAGE "luci-app-store" "linkease/istore" "main"
 
 # 我新加的
 #UPDATE_PACKAGE "luci-app-netwizard" "sirpdboy/luci-app-netwizard" "main"
@@ -94,11 +96,6 @@ echo "CONFIG_PACKAGE_luci-app-rtp2httpd=y" >> $GITHUB_WORKSPACE/Config/GENERAL.t
 # 迅雷有问题
 #UPDATE_PACKAGE "luci-app-thunder" "byludy/luci-app-thunder" "main"
 #echo "CONFIG_PACKAGE_luci-app-thunder=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
-
-# 只有ipk可以用
-#UPDATE_PACKAGE "luci-app-store" "linkease/istore" "main"
-#echo "CONFIG_PACKAGE_luci-app-store=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
-#mv luci-app-store/luci/* luci-app-store/
 
 #更新软件包版本
 UPDATE_VERSION() {
