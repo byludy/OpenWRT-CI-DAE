@@ -85,6 +85,9 @@ UPDATE_PACKAGE "luci-app-lucky" "sirpdboy/luci-app-lucky" "main"
 UPDATE_PACKAGE "luci-app-watchdog" "sirpdboy/luci-app-watchdog" "main"
 echo "CONFIG_PACKAGE_luci-app-watchdog=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 
+UPDATE_PACKAGE "luci-app-tcpdump" "KFERMercer/luci-app-tcpdump" "master"
+echo "CONFIG_PACKAGE_luci-app-tcpdump=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
+
 #更新软件包版本
 UPDATE_VERSION() {
 	local PKG_NAME=$1
