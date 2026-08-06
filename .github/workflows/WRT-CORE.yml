@@ -152,8 +152,8 @@ jobs:
             ./wrt/.ccache
             ./wrt/staging_dir
           key: ${{ env.WRT_ARCH }}-${{ env.WRT_REPO }}-${{ env.WRT_BRANCH }}-${{ env.WRT_DATE }}
-    restore-keys: |
-      ${{ env.WRT_ARCH }}-${{ env.WRT_REPO }}-${{ env.WRT_BRANCH }}-
+          restore-keys: |
+            ${{ env.WRT_ARCH }}-${{ env.WRT_REPO }}-${{ env.WRT_BRANCH }}-
             ${{ env.WRT_ARCH }}-
 
       - name: Refresh the cache
