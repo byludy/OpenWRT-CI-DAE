@@ -20,6 +20,11 @@ on:
         default: 'false'
         required: false
         type: boolean
+      USE_QIUSIMONS_DAE_MAKEFILE:
+        description: '使用 QiuSimons dae/Makefile'
+        default: true
+        required: false
+        type: boolean
 
 #CI权限
 permissions: write-all
@@ -32,7 +37,7 @@ jobs:
       fail-fast: false
       #max-parallel: 3
       matrix:
-        CONFIG: [IPQ60XX-WIFI-NO]
+        CONFIG: [IPQ60XX-WIFI-YES, IPQ60XX-WIFI-NO]
         SOURCE: [VIKINGYFY/immortalwrt]
 #        SOURCE: [davidtall/immortalwrt]
         BRANCH: [main]
@@ -51,7 +56,7 @@ jobs:
       #默认WIFI密码
       WRT_WORD: 12345678
       #默认地址
-      WRT_IP: 192.168.1.1
+      WRT_IP: 192.168.10.1
       #默认密码，仅作提示，修改无用
       WRT_PW: 无
       #源码链接
@@ -64,5 +69,7 @@ jobs:
       WRT_PACKAGE: ${{inputs.PACKAGE}}
       #仅输出配置文件
       WRT_TEST: ${{inputs.TEST}}
+      #是否替换 luci-app-dae 的 Makefile
+      USE_QIUSIMONS_DAE_MAKEFILE: ${{inputs.USE_QIUSIMONS_DAE_MAKEFILE || false}}
 
       CI_NAME: ${{github.workflow}}
