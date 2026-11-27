@@ -86,12 +86,6 @@ UPDATE_PACKAGE "luci-app-dae" "davidtall/luci-app-dae" "main"
 UPDATE_PACKAGE "luci-app-pushbot" "zzsj0928/luci-app-pushbot" "master"
 UPDATE_PACKAGE "luci-app-nginx-manager" "hello-yunshu/luci-app-nginx-manager" "main"
 #UPDATE_PACKAGE "luci-app-dockerman" "lisaac/luci-app-dockerman" "master"
-UPDATE_PACKAGE "luci-app-lucky" "sirpdboy/luci-app-lucky" "main"
-
-#新加的
-UPDATE_PACKAGE "luci-app-watchdog" "sirpdboy/luci-app-watchdog" "main"
-echo "CONFIG_PACKAGE_luci-app-watchdog=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
-
 #更新软件包版本
 UPDATE_VERSION() {
 	local PKG_NAME=$1
